@@ -2,12 +2,14 @@
   <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">About</a></li>
   <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">Portfolio</a></li>
   <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "https://medium.com/@joeynavarro"}}".data>Blog</a></li>
-  <li class="{% if page.url contains '/elements/' %} active {% endif %}"><a href="{{ "/elements/" | absolute_url }}">Resume</a></li>
+  <li class="{% if page.url contains '/elements/' %} active {% endif %}"><a href="{{ "/elements/resume.pdf" | absolute_url }}">Resume</a></li>
 </ul>
 
 <ul class="icons">
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  <li><a href="https://www.linkedin.com/in/{{site.linkedin}}"class="icon fa fa-linkedin-square" aria-hidden="true" rel="nofollow"><span class="label"></span></a></li>
+  <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
   <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
   <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-  <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-  <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+  
 </ul>
