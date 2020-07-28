@@ -1,9 +1,10 @@
 <ul class="links">
   <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">About</a></li>
-  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url}}".data>Blog<Portfolio</a></li>
-  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "https://medium.com/@joeynavarro"}}".data>Blog</a></li>
+  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "https://medium.com/@joeynavarro"}}".data>Blog</a></li>
+  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url}}".data>Portfolio</a></li>
   <li class="{% if page.url contains '/elements/' %} active {% endif %}"><a href="{{ "/elements/resume.pdf" | absolute_url }}">Resume</a></li>
 </ul>
+
 
 <ul class="icons">
   <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
