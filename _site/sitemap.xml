@@ -71,16 +71,6 @@
      </url>
   
     <url>
-      <loc>http://localhost:4000/elements/</loc>
-       <lastmod>2017-11-02T00:00:00-05:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.7</priority>
-      
-     </url>
-  
-    <url>
       <loc>http://localhost:4000/</loc>
        <lastmod>2017-11-02T00:00:00-05:00</lastmod>
       
