@@ -3,8 +3,8 @@ title:              Joey Navarro
 bio:                'Joey Navarro is a Leader and Data Scientist'
 description:        "Joey Navarro is a Leader and Data Scientist"
 locale:             en_US
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://joeynavarro.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
@@ -27,7 +27,6 @@ background_image:   /images/bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
-root: '/css/main.css'
 defaults:
 - scope:
     path: ''
@@ -35,7 +34,7 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
-    author: Joey Navarro
+    author:
 
 # Jekyll
 permalink:          /blog/:title/
