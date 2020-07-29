@@ -2,7 +2,7 @@
   <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">About</a></li>
   <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "https://medium.com/@joeynavarro.data"}}".data>Blog</a></li>
   <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url}}".data>Portfolio</a></li>
-  <li class="{% if page.url contains '/elements/' %} active {% endif %}"><a href="{{ "/elements/" | absolute_url }}">Education</a></li>
+  <li class="{% if page.url contains '/education/' %} active {% endif %}"><a href="{{ "/education/" | absolute_url }}">Education</a></li>
   <li class="{% if page.url contains '/docs/resume.pdf' %} active {% endif %}"><a href="{{ "https://drive.google.com/file/d/1_Y26F8IKU5QAgDpj8Bi2MIY1eNC1DAOZ/view?usp=sharing" | absolute_url }}">Resume</a></li>
 </ul>
 
