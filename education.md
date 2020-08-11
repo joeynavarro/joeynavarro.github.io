@@ -9,6 +9,8 @@ sitemap:
 ---
 <h1><center>Education</center></h1>
 
+<style type='text/css'> a { text-decoration: none; border: 0; }  } </style>
+
 
 
 ***
@@ -28,6 +30,8 @@ sitemap:
 ***
 
 
+
+ 
 
 ## Certificates
 

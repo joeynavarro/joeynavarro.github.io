@@ -1,6 +1,4 @@
-I"C<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/test_taker.jpg" alt="" /></a></p>
-
-<h2 id="problem-statement">Problem Statement</h2>
+I"Ú<h2 id="problem-statement">Problem Statement</h2>
 
 <p>Participation rate changes have been recorded for both the SAT and ACT exams between 2017 and 2018. This report explores the reasons for the these changes within the United States categorized by test and subject.</p>
 
@@ -26,27 +24,36 @@
 
 <p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-1.png" alt="" /></a></p>
 
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-2.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-3.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-4.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-5.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-6.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-7.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-8.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-9.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-10.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-11.png" alt="" /></a></p>
-
-<p><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-12.png" alt="" /></a></p>
+<table>
+  <thead>
+    <tr>
+      <th><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-2.png" alt="" /></a></th>
+      <th><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-3.png" alt="" /></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-4.png" alt="" /></a></td>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-5.png" alt="" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-6.png" alt="" /></a></td>
+      <td>Â </td>
+    </tr>
+    <tr>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-7.png" alt="" /></a></td>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-8.png" alt="" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-9.png" alt="" /></a></td>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-10.png" alt="" /></a></td>
+    </tr>
+    <tr>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-11.png" alt="" /></a></td>
+      <td><a href="#" class="image main"><img src="http://localhost:4000/images/project_1/download-12.png" alt="" /></a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="descriptive-and-inferential-statistics">Descriptive and Inferential Statistics</h3>
 

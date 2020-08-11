@@ -70,10 +70,12 @@
 		visibility: hidden;
 		width: 20rem;
 		z-index: _misc(z-index-base) + 2;
+		text-decoration: none;
 
 		.links {
 			list-style: none;
 			padding-left: 0;
+			
 
 			li {
 				border-top: solid 2px _palette(border);
