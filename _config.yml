@@ -4,7 +4,7 @@ title: Joey Navarro
 logo: # You can add own logo. For example '/images/logo.png'.
 description: I'm Joey Navarro, Doctoral Student, Data Scientist, Developer, and Pharmatech.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://joseph-jekyll.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.navarro.expert" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # Author Settings
