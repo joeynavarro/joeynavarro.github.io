@@ -1,16 +1,16 @@
 #-------------------------------
 # General Site Settings
-title: Joey Navarro
+title: Joseph Lawrence
 logo: # You can add own logo. For example '/images/logo.png'.
-description: I'm Joey Navarro, Doctoral Student, Data Scientist, Developer, and Pharmatech.
+description: Joseph is a super minimal content focus theme for Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.navarro.expert" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joeynavarro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # Author Settings
 author:
   name: Joseph Lawrence
-  bio: Hey there, I'm Joey Navarro, Doctoral Student, Data Scientist, Developer, and Pharmatech.  I transform data into valuable insights that empower healthcare decision-makers. My research focuses on understanding the intention of healthcare IT leaders to adopt AI technologies.
+  bio: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
   avatar: '/images/01.jpg'
 
 social:
@@ -27,8 +27,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: I'm Joey Navarro, Doctoral Student, Data Scientist, Developer, and Pharmatech.
-  hero__description: Hey there, I'm Joey Navarro, Doctoral Student, Data Scientist, Developer, and Pharmatech.  I transform data into valuable insights that empower healthcare decision-makers. My research focuses on understanding the intention of healthcare IT leaders to adopt AI technologies.
+  hero__title: Hey, I’m Joseph! Designer & Developer.
+  hero__description: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
   hero__image: '/images/01.jpg'
 
 
