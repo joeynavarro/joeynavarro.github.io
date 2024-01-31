@@ -4,14 +4,14 @@ title: Joseph Lawrence
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Joseph is a super minimal content focus theme for Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://navarro.expert/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joeynavarro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # Author Settings
 author:
-  name: Joseph Lawrence
+  name: Joey Navarro
   bio: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
-  avatar: '/images/01.jpg'
+  avatar: '/images/01.JPG'
 
 social:
 - {icon: "ion-logo-twitter", label: Twitter, link: "https://twitter.com"}
@@ -29,7 +29,7 @@ social:
 hero:
   hero__title: Hey, I’m Joseph! Designer & Developer.
   hero__description: I'm a designer & products creator. I teach designers code and developers design. Passionate about people, health, & design systems.
-  hero__image: '/images/01.jpg'
+  hero__image: '/images/01.JPG'
 
 
 #-------------------------------
