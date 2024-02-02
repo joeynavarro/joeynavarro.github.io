@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
+gem 'base64', '~> 0.2'
 gem 'jekyll', '3.9.3' # Exact version to match github-pages requirement
 gem 'jekyll-paginate'
 gem 'jekyll-tagging'

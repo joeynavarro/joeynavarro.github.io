@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Joey Navarro
-logo: '/images/db-atom.png' # You can add own logo. For example '/images/logo.png'.
+logo: '/images/logo.png' # You can add own logo. For example '/images/logo.png'.
 description: Joey is a data enthusiast with a strong pharmaceutical background.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joeynavarro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -18,8 +18,8 @@ social:
 - {icon: "ion-logo-facebook", label: Facebook, link: "https://www.facebook.com/joeynavarro.io"}
 - {icon: "ion-logo-instagram", label: Instagram, link: "https://www.instagram.com/iamjoeynavarro/"}
 - {icon: "ion-logo-github", label: Github, link: "https://github.com/joeynavarro"}
-- {icon: "ion-logo-desktop", label: Kaggle, link: "https://www.kaggle.com/joeynavarro"}
-- {icon: "ion-logo-book", label: Medium, link: "https://medium.com/@joeynavarro.data"}
+- {icon: "ion-logo-desktop", label: Desktop, link: "https://www.kaggle.com/joeynavarro"}
+- {icon: "ion-logo-book", label: Book, link: "https://medium.com/@joeynavarro.data"}
 
 # Example of adding a new link to the author section and footer - {icon: "ion-logo-github", label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -27,7 +27,7 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Joey! Data Scientist, Developer, Doctoral Candidate, & Pharmatech.
+  hero__title: Hey, I’m Joey! Data Scientist, Developer, & Pharmatech.
   hero__description: I am a data enthusiast with a strong pharmaceutical background. My unique perspective bridges the worlds of data, healthcare, and technology. My passion is utilizing data to drive innovation in healthcare and beyond. My current research focuses on the intention to implement artificial intelligence in healthcare, adding depth to my commitment to advancing the field.
   hero__image: '/images/01.JPG'
 
@@ -45,7 +45,7 @@ mailchimp__button__text: Join # Add your button text
 # Contact Settings
 contact:
   email: joey@navarro.expert # Add your email for contact form
-  description: Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
+  description: Feel free to get in touch with me via email by completing the contact form on my website. I look forward to hearing from you! # Add a description of your form
 
 # NOTE
 # Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
@@ -58,7 +58,7 @@ disqus-identifier: anvodstudio-demo # add your shortname for Disqus Comment. For
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: G-YTKECKYDJV # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------
@@ -82,6 +82,11 @@ defaults:
 
 include:
   - _pages
+  - _projects
+
+#collections:
+##    output: true
+#    permalink: /projects/:name/
 
 # Tags
 tag_page_dir:         tag
