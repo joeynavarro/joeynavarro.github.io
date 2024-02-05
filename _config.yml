@@ -82,7 +82,6 @@ defaults:
 
 include:
   - _pages
-  - _projects
 
 #collections:
 ##    output: true
