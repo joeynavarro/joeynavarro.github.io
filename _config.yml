@@ -27,7 +27,7 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Joey! Data Scientist, Developer, & Pharmatech.
+  hero__title: Hey, I’m Joey! Data Scientist, Developer, & Pharmtech.
   hero__description: I am a data enthusiast with a strong pharmaceutical background. My unique perspective bridges the worlds of data, healthcare, and technology. My passion is utilizing data to drive innovation in healthcare and beyond. My current research focuses on the intention to implement artificial intelligence in healthcare, adding depth to my commitment to advancing the field.
   hero__image: '/images/01.JPG'
 
