@@ -83,10 +83,6 @@ defaults:
 include:
   - _pages
 
-#collections:
-##    output: true
-#    permalink: /projects/:name/
-
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
