@@ -1,0 +1,23 @@
+:root {
+  color-scheme: dark;
+  --bg: #05070c;
+  --bg-soft: #0a0f19;
+  --panel: rgba(14, 21, 34, 0.72);
+  --panel-strong: rgba(18, 27, 43, 0.92);
+  --text: #f3f7ff;
+  --muted: #a8b5c8;
+  --line: rgba(170, 199, 235, 0.18);
+  --accent: #61dafb;
+  --accent-2: #a78bfa;
+  --accent-3: #43e6b0;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  --radius: 24px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
