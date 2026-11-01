@@ -2,15 +2,15 @@
 # General Site Settings
 title: Joey Navarro
 logo: '/images/logo.png' # You can add own logo. For example '/images/logo.png'.
-description: Joey is a data enthusiast with a strong pharmaceutical background.
+description: "Joey Navarro’s personal academic and research website, exploring artificial intelligence adoption, healthcare information systems, and applied data analysis."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://joeynavarro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joeynavarro.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # Author Settings
 author:
   name: Joey Navarro
-  bio: I am a data enthusiast with a strong pharmaceutical background. My unique perspective bridges the worlds of data, healthcare, and technology. My passion is utilizing data to drive innovation in healthcare and beyond. My current research focuses on the intention to implement artificial intelligence in healthcare, adding depth to my commitment to advancing the field.
+  bio: "I am pursuing doctoral study in Information Technology, with research focused on the intention to implement artificial intelligence in healthcare. My interests connect healthcare information systems, applied data analysis, and organizational adoption."
   avatar: '/images/01.JPG'
 
 social:
@@ -27,8 +27,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hey, I’m Joey! Data Scientist, Developer, & Pharmtech.
-  hero__description: I am a data enthusiast with a strong pharmaceutical background. My unique perspective bridges the worlds of data, healthcare, and technology. My passion is utilizing data to drive innovation in healthcare and beyond. My current research focuses on the intention to implement artificial intelligence in healthcare, adding depth to my commitment to advancing the field.
+  hero__title: "Joey Navarro — Academic & Research"
+  hero__description: "My personal academic website brings together ongoing research on healthcare AI adoption, analytical writing, and projects in data science and information technology."
   hero__image: '/images/01.JPG'
 
 
@@ -44,8 +44,8 @@ mailchimp__button__text: Join # Add your button text
 #-------------------------------
 # Contact Settings
 contact:
-  email: joey@navarro.expert # Add your email for contact form
-  description: Feel free to get in touch with me via email by completing the contact form on my website. I look forward to hearing from you! # Add a description of your form
+  email: hello@joeynavarro.io # Add your email for contact form
+  description: "For academic correspondence, research conversations, or questions about my writing, email hello@joeynavarro.io." # Add a description of your form
 
 # NOTE
 # Joseph comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.

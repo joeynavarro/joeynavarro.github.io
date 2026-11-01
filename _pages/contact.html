@@ -2,30 +2,12 @@
 layout: page
 title: Contact
 permalink: /contact/
-image: '/images/contact.png'
+description: "Academic and research correspondence with Joey Navarro."
 ---
 
-<div class="form-box">
-  <div class="contact-head">
-    {% if site.contact.description %}
-    <p class="page-description">{{site.contact.description}}</p>
-    {% endif %}
-  </div>
-  <form class="form" action="{% if site.contact.email %}https://formspree.io/{{site.contact.email}}{% else %}#{% endif %}" method="POST">
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
-    </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
-    </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message" required></textarea>
-    </div>
-    <div class="form__group">
-      <button class="button" type="submit">Send Message</button>
-    </div>
-  </form>
-</div>
+<p>For academic correspondence, conversations about healthcare AI adoption, or questions about my analytical writing, email me directly.</p>
+<p><a class="button" href="mailto:{{ site.contact.email }}">{{ site.contact.email }} ↗</a></p>
+<h2>Research and writing</h2>
+<p>You can explore my <a href="/#research">current research interests</a>, read my <a href="/writing/">analytical project reports</a>, or find code on <a href="https://github.com/joeynavarro" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+<h2>Field IT services</h2>
+<p>For on-site technical work, visit my separate business website, <a href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies</a>.</p>

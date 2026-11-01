@@ -264,6 +264,7 @@ if (canvas && sceneWrap && !reducedMotion) {
   animate();
 }
 
+document.documentElement.classList.add('has-reveal');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
