@@ -1,0 +1,3 @@
+{%- assign date_value = include.date -%}
+{%- assign month_number = date_value | date: '%m' | plus: 0 | minus: 1 -%}
+{%- if lang == 'es' -%}{{ date_value | date: '%-d' }} de {{ t.months[month_number] }} de {{ date_value | date: '%Y' }}{%- else -%}{{ t.months[month_number] }} {{ date_value | date: '%-d, %Y' }}{%- endif -%}

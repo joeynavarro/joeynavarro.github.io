@@ -1,19 +1,34 @@
+---
+layout: null
+lang: en
+permalink: /
+translation_en: /
+translation_es: /es/
+---
+{% include locale.html %}
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang }}" data-page-en="{{ english_url | relative_url }}" data-page-es="{{ spanish_url | relative_url }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joey Navarro | Academic & Research</title>
   <meta name="description" content="Joey Navarro’s personal academic and research website. Ongoing research on AI adoption in healthcare, analytical writing, and applied data projects.">
   <meta name="theme-color" content="#eeeaff">
-  <link rel="canonical" href="https://joeynavarro.io/">
+  <link rel="icon" type="image/png" href="{{ '/images/db-atom.png' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url }}">
+  <link rel="alternate" hreflang="es" href="{{ spanish_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ english_url | absolute_url }}">
   <meta property="og:title" content="Joey Navarro | Academic & Research">
   <meta property="og:description" content="Personal academic work exploring AI adoption in healthcare, information systems, applied data analysis, and organizational change.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://joeynavarro.io/">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:locale" content="{% if lang == 'es' %}es_ES{% else %}en_US{% endif %}">
   <meta property="og:image" content="https://joeynavarro.io/images/01.JPG">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="{{ '/portfolio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/language.css' | relative_url }}">
+  <script src="{{ '/language.js' | relative_url }}"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,7 +36,7 @@
   <header class="site-header" data-header>
     <div class="nav-shell">
       <a class="brand" href="#top" aria-label="Joey Navarro home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <img class="brand-logo" src="{{ '/images/db-atom.png' | relative_url }}" alt="" width="36" height="41">
         <span>JOEY NAVARRO</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -29,8 +44,10 @@
         <a href="#writing">Writing</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a class="business-nav" href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies ↗</a>
       </nav>
       <a class="nav-cta" href="mailto:hello@joeynavarro.io">Get in touch <span aria-hidden="true">↗</span></a>
+      {% include language-switch.html %}
     </div>
   </header>
 
@@ -80,13 +97,13 @@
 
       <div class="shell profile-panel" data-tilt data-reveal>
         <div class="profile-image-wrap">
-          <img src="images/01.JPG" alt="Portrait of Joey Navarro" class="profile-image">
+          <img src="{{ '/images/01.JPG' | relative_url }}" alt="Portrait of Joey Navarro" class="profile-image">
           <span class="profile-badge">Joey Navarro · Doctoral study in progress</span>
         </div>
         <div class="profile-content">
           <p class="eyebrow">ACADEMIC BACKGROUND</p>
           <h2>A background in science, leadership, and healthcare.</h2>
-          <p>I hold a bachelor’s degree in Biochemistry and a master’s degree in Leadership and Change, and I am pursuing doctoral study in Information Technology. My healthcare experience informs the questions I ask about technology, organizational decisions, and implementation.</p>
+          <p>I hold a Bachelor of Science and Arts in Biochemistry from The University of Texas at Austin and a master’s degree in Leadership and Change from St. Edward’s University, and I am pursuing doctoral study in Information Technology at Walden University. My healthcare experience informs the questions I ask about technology, organizational decisions, and implementation.</p>
           <div class="profile-stats">
             <div><strong>AI</strong><span>Adoption research</span></div>
             <div><strong>DS</strong><span>Applied analytics</span></div>
@@ -197,10 +214,10 @@
           <p>My education and healthcare experience provide different perspectives on the same question: how can technology become useful in practice?</p>
         </div>
         <div class="journey-track">
-          <article data-reveal><span class="year">Science</span><h3>Biochemistry</h3><p>Scientific reasoning, laboratory foundations, and molecular-level problem solving.</p></article>
+          <article data-reveal><span class="year">Science</span><h3>Biochemistry</h3><p>The University of Texas at Austin · Bachelor of Science and Arts. Scientific reasoning, laboratory foundations, and molecular-level problem solving.</p></article>
           <article data-reveal><span class="year">Analytics</span><h3>AI & Data Science</h3><p>Model development, analytical workflows, experimentation, and technical communication.</p></article>
           <article data-reveal><span class="year">Healthcare</span><h3>Pharmacy Technology</h3><p>Medication workflows, production, quality, compliance, inventory, and patient-centered operations.</p></article>
-          <article data-reveal><span class="year">In progress</span><h3>Doctoral study in Information Technology</h3><p>Ongoing academic work focused on AI adoption in healthcare and organizational implementation.</p></article>
+          <article data-reveal><span class="year">In progress</span><h3>Doctoral study in Information Technology</h3><p>Walden University · In progress. Ongoing academic work focused on AI adoption in healthcare and organizational implementation.</p></article>
         </div>
       </div>
     </section>
@@ -221,12 +238,12 @@
   </main>
 
   <footer class="footer shell">
-    <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>Joey Navarro</strong></div>
+    <div class="footer-brand"><img class="brand-logo" src="{{ '/images/db-atom.png' | relative_url }}" alt="" width="36" height="41"><strong>Joey Navarro</strong></div>
     <p>Personal academic &amp; research website</p>
     <div class="footer-links"><a href="https://github.com/joeynavarro">GitHub</a><a href="https://www.kaggle.com/joeynavarro">Kaggle</a><a href="https://medium.com/@joeynavarro.data">Medium</a><a href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies ↗</a></div>
     <span>© <span data-year></span></span>
   </footer>
 
-  <script type="module" src="portfolio.js"></script>
+  <script type="module" src="{{ '/portfolio.js' | relative_url }}"></script>
 </body>
 </html>

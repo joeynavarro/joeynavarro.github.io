@@ -1,10 +1,1 @@
-<div class="col col-4 col-d-6 col-t-12">
-  <div class="widget widget-tags">
-    <div class="widget__head">
-      <h3 class="widget__title">Explore tags</h3>
-    </div>
-    <div class="tag__cloud">
-      {{ site | tag_cloud }}
-    </div>
-  </div>
-</div>
+<div class="col col-4 col-d-6 col-t-12"><div class="widget widget-tags"><div class="widget__head"><h3 class="widget__title">{{ t.explore_tags }}</h3></div><div class="tag__cloud">{% for tag_entry in site.tags %}{% assign tag_name = tag_entry[0] %}{% assign tag_slug = tag_name | slugify %}<a href="{{ locale_prefix | append: '/tag/' | append: tag_slug | append: '.html' | relative_url }}">{{ t.tags[tag_name] | default: tag_name }}</a> {% endfor %}</div></div></div>

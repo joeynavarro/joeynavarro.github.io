@@ -121,7 +121,7 @@ if (canvas && sceneWrap && !reducedMotion) {
     return group;
   }
 
-  const tokenAI = createToken('AI', ['#ffffff', '#cddaff'], new THREE.Vector3(2.62, 1.85, 0.4), 0.82);
+  const tokenAI = createToken(document.documentElement.lang === 'es' ? 'IA' : 'AI', ['#ffffff', '#cddaff'], new THREE.Vector3(2.62, 1.85, 0.4), 0.82);
   const tokenRx = createToken('Rx', ['#ffffff', '#f0a6df'], new THREE.Vector3(-2.25, -1.65, 0.1), 0.72);
   const tokenData = createToken('01', ['#ffffff', '#a8e9ff'], new THREE.Vector3(-2.45, 1.65, -0.2), 0.58);
 

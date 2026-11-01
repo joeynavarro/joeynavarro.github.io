@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+course_project: true
+translation_en: /predicting-housing-prices-in-ames-iowa
+translation_es: /es/predicting-housing-prices-in-ames-iowa
 title:  Predicting Housing Prices in Ames, Iowa
 date:   2020-08-14
 description: This project was to predict housing prices for Ames, Iowa, given a dataset from the Ames, Iowa Assessor's Office containing information on houses sold between 2006-2010. My challenge was to build a linear regression model that would most accurately predict housing prices given 82 housing features to select from and model with.
@@ -9,7 +13,7 @@ tags: [Machine Learning, Modeling, Visualizations]
 
 
 
-**[Click Me To Visit The Project GitHub Repo]([https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/Ames%2C%20IA%20Sale%20Price%20Predictions](https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/Ames%2C IA Sale Price Predictions))**
+**[Click Me To Visit The Project GitHub Repo](https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/Ames%2C%20IA%20Sale%20Price%20Predictions)**
 
 ## Problem Statement
 

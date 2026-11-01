@@ -1,13 +1,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="{{ '/images/db-atom.png' | relative_url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 | escape }}{% else %}{{ t.site_description | escape }}{% endif %}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url | escape }}">
+  <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url | escape }}">
+  <link rel="alternate" hreflang="es" href="{{ spanish_url | absolute_url | escape }}">
+  <link rel="alternate" hreflang="x-default" href="{{ english_url | absolute_url | escape }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -20,6 +23,11 @@
   <meta property="og:description" content="{% if page.url == "/" %}{{ site.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}" />
   <meta property="og:image" content="{% if page.url == "/" %}{{ site.hero.hero__image | absolute_url }}{% else %}{{ page.image | absolute_url }}{% endif %}" />
 
+  <meta property="og:locale" content="{% if lang == 'es' %}es_ES{% else %}en_US{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url | escape }}">
+  <link rel="stylesheet" href="{{ '/language.css' | relative_url }}">
+  <script src="{{ '/language.js' | relative_url }}"></script>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
 
@@ -27,10 +35,10 @@
   <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
   <script>
-    if (localStorage.getItem("theme") === "dark") {
+    try { if (localStorage.getItem("theme") === "dark") {
       document.documentElement.setAttribute("dark", "");
       document.documentElement.classList.add('dark-mode');
-    }
+    } } catch (_) {}
   </script>
 
   <style>

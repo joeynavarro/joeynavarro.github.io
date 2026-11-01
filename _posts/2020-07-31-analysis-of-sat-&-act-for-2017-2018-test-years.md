@@ -1,5 +1,9 @@
 ---
 layout: post
+lang: en
+course_project: true
+translation_en: /analysis-of-sat-&-act-for-2017-2018-test-years
+translation_es: /es/analysis-of-sat-&-act-for-2017-2018-test-years
 title:  "Analysis of SAT & ACT for 2017 & 2018 Test Years"
 date:   2020-07-31
 description: Participation rate changes have been recorded for both the SAT and ACT exams between 2017 and 2018. This report explores the reasons for the these changes within the United States categorized by test and subject.
@@ -8,7 +12,7 @@ image: "/images/project_1/test_taker.jpg"
 
 
 
-**[Click Me To Visit The Project GitHub Repo]([https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/ACT%20Against%20SAT](https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/ACT Against SAT))**
+**[Click Me To Visit The Project GitHub Repo](https://git.generalassemb.ly/joeynavarro/Submissions/tree/master/Projects/ACT%20Against%20SAT)**
 
 ## Problem Statement
 

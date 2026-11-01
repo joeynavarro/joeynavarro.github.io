@@ -1,0 +1,14 @@
+{%- assign lang = page.lang | default: 'en' -%}
+{%- assign t = site.data.locales[lang] -%}
+{%- if lang == 'es' -%}
+  {%- assign home_url = '/es/' -%}
+  {%- assign locale_prefix = '/es' -%}
+  {%- assign english_url = page.translation_en | default: page.url | remove_first: '/es' -%}
+  {%- assign spanish_url = page.translation_es | default: page.url -%}
+{%- else -%}
+  {%- assign home_url = '/' -%}
+  {%- assign locale_prefix = '' -%}
+  {%- assign english_url = page.translation_en | default: page.url -%}
+  {%- assign spanish_url = page.translation_es -%}
+  {%- unless spanish_url -%}{%- assign spanish_url = '/es' | append: english_url -%}{%- endunless -%}
+{%- endif -%}

@@ -1,0 +1,18 @@
+---
+layout: null
+lang: es
+permalink: /es/search.json
+---
+{% include locale.html %}
+[
+{% for post in site.posts %}
+{% assign article = post %}{% if lang == 'es' %}{% assign article = site.pages | where: 'translation_en', post.url | where: 'lang', 'es' | first %}{% endif %}
+{% capture article_html %}{% include article-content.html %}{% endcapture %}
+{
+  "title": {{ article.title | jsonify }},
+  "article": {{ article_html | strip_newlines | jsonify }},
+  "url": {{ article.url | relative_url | jsonify }},
+  "content": {{ article.content | strip_html | strip_newlines | jsonify }}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

@@ -1,28 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+{% include locale.html %}
+<html lang="{{ lang }}" data-page-en="{{ english_url | relative_url | escape }}" data-page-es="{{ spanish_url | relative_url | escape }}">
 {% include head.html %}
-
 <body>
-
-  {% if site.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
-
-    {% include header.html %}
-
-    <!-- begin content -->
-    <main class="content" aria-label="Content">
-      {{ content }}
-    </main>
-    <!-- end content -->
-
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-round-up"></i></div>
-
-    {% include footer.html %}
-
+  <a class="legacy-skip-link" href="#main-content">{{ t.skip }}</a>
+  {% if site.google-analytics %}{% include google-analytics.html %}{% endif %}
+  {% include header.html %}
+  <main id="main-content" class="content" aria-label="{{ t.content }}">{{ content }}</main>
+  <button class="top" type="button" title="{{ t.top }}" aria-label="{{ t.top }}"><i class="ion ion-ios-arrow-round-up" aria-hidden="true"></i></button>
+  {% include footer.html %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <script src="{{ '/js/scripts.js' | relative_url }}"></script>
 </body>
-
 </html>

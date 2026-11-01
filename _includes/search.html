@@ -1,29 +1,8 @@
-<!-- begin search -->
-<div class="search">
-
-  <div class="container">
-    <div class="row">
-      <div class="col col-8 push-2 col-d-12 push-d-0">
-        <div class="search__box">
-          <div class="search__group">
-            <div class="search__close">
-              <i class="ion ion-md-close"></i>
-            </div>
-            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
-            <input type="text" id="js-search-input" class="search__text" autocomplete="off" placeholder="Type to search...">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col col-8 push-2 col-d-12 push-d-0">
-        <div class="row search-results-list" id="js-results-container"></div>
-      </div>
-    </div>
-  </div>
-
+<div class="search" role="search" aria-label="{{ t.search_label }}">
+  <div class="container"><div class="row"><div class="col col-8 push-2 col-d-12 push-d-0"><div class="search__box"><div class="search__group">
+    <button class="search__close" type="button" aria-label="{{ t.close_search }}"><i class="ion ion-md-close" aria-hidden="true"></i></button>
+    <label for="js-search-input" class="screen-reader-text">{{ t.search_label }}</label>
+    <input type="search" id="js-search-input" class="search__text" autocomplete="off" placeholder="{{ t.search_placeholder }}">
+  </div></div></div></div></div>
+  <div class="container"><div class="row"><div class="col col-8 push-2 col-d-12 push-d-0"><div class="row search-results-list" id="js-results-container" aria-label="{{ t.search_results }}" aria-live="polite"></div></div></div></div>
 </div>
-<!-- end search -->

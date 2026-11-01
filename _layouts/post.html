@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include locale.html %}
 
 {% if page.image %}
 <div class="container">
@@ -18,9 +19,10 @@ layout: default
 <div class="container animate">
 
   <div class="post__info">
+    {% if page.course_project %}<p class="course-project-label">{{ t.course_project }}</p>{% endif %}
     <h1 class="post__title">{{ page.title | escape }}</h1>
     <div class="post__meta">
-      <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time> – <span class="post__minutes">{% assign words = page.content | number_of_words %} {% if words < 360 %} 1 min read {% else %} {{ words | divided_by:180 }} min read {% endif %}
+      <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{% include localized-date.html date=page.date %}</time> – <span class="post__minutes">{% assign words = page.content | number_of_words %} {% if words < 360 %} 1 {{ t.read_minutes }} {% else %} {{ words | divided_by:180 }} {{ t.read_minutes }} {% endif %}
       </span>
     </div>
   </div>
@@ -38,12 +40,12 @@ layout: default
           <li class="share__item">
             <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-              title="Share on Twitter" rel="nofollow">Twitter</a>
+              title="{{ t.share_twitter }}" rel="nofollow">Twitter</a>
           </li>
           <li class="share__item">
             <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
               onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-              title="Share on Facebook" rel="nofollow">Facebook</a>
+              title="{{ t.share_facebook }}" rel="nofollow">Facebook</a>
           </li>
         </ul>
       </div>
@@ -51,19 +53,19 @@ layout: default
       {% if page.tags.size >= 1 %}
       <div class="post__tags">
         {% for tag in page.tags %}
-        <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tag">{{ tag }}</a>
+        {% assign tag_slug = tag | slugify %}<a href="{{ locale_prefix | append: "/tag/" | append: tag_slug | append: ".html" | relative_url }}" class="post__tag">{{ t.tags[tag] | default: tag }}</a>
         {% endfor %}
       </div>
       {% endif %}
     </div>
 
     <div class="post-author">
-      <a href="{{site.baseurl}}/about/" class="post-author__image" aria-label="{{site.author.name}}">
+      <a href="{{ locale_prefix | append: "/about/" | relative_url }}" class="post-author__image" aria-label="{{site.author.name}}">
         <img src="{{site.baseurl}}{{site.author.avatar}}" alt="{{site.author.name}}">
       </a>
       <div class="post-author__info">
-        <h2 class="post-author__name"><a href="{{site.baseurl}}/about/">{{site.author.name}}</a></h2>
-        <p class="post-author__bio">{{ site.author.bio }}</p>
+        <h2 class="post-author__name"><a href="{{ locale_prefix | append: "/about/" | relative_url }}">{{site.author.name}}</a></h2>
+        <p class="post-author__bio">{{ t.author_bio }}</p>
         <div class="post-author__meta">
           {% for social in site.author-social %}
           <a class="post-author__link" href="{{social.link}}" target="_blank"><i class="ion {{social.icon}}"></i></a>

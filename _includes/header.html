@@ -1,54 +1,20 @@
-<!-- begin header -->
 <header class="header">
-  <div class="container">
-    <div class="row">
-      <div class="header__inner col col-12">
-
-        <div class="logo">
-          <a class="logo__link" href="{{ site.baseurl }}/">
-          {% if site.logo %}
-            <img class="logo__image" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}">
-          {% else %}
-            {{ site.title }}
-          {% endif %}
-          </a>
-        </div>
-
-        <nav class="main-nav">
-          <div class="main-nav__box">
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
-            <div class="nav__title">Menu</div>
-            <ul class="nav__list list-reset">
-              <li class="nav__item">
-                <a href="{{ site.baseurl }}/" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="{{ site.baseurl }}/#research" class="nav__link">Research</a>
-              </li>
-              {% for page in site.pages %}
-                {% unless page.name == 'tags.html' or page.name == '404.html' %}
-                  {% if page.title %}
-                  <li class="nav__item">
-                    <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
-                  </li>
-                  {% endif %}
-                {% endunless %}
-              {% endfor %}
-            </ul>
-          </div>
-        </nav>
-
-        <div class="nav-buttons">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
-          <i class="nav__icon nav__icon-search ion ion-md-search"></i>
-        </div>
-
-      </div>
-    </div>
-  </div>
+  <div class="container"><div class="row"><div class="header__inner col col-12">
+    <div class="logo"><a class="logo__link" href="{{ home_url | relative_url }}" aria-label="{{ t.home }} — Joey Navarro">{% if site.logo %}<img class="logo__image" src="{{ site.logo | relative_url }}" alt="" width="36" height="41"><span>{{ site.title }}</span>{% else %}{{ site.title }}{% endif %}</a></div>
+    <nav class="main-nav" id="main-navigation" aria-label="{{ t.primary_navigation }}"><div class="main-nav__box">
+      <button type="button" class="nav__icon-close" aria-label="{{ t.close_menu }}"><i class="ion ion-md-close" aria-hidden="true"></i></button>
+      <div class="nav__title">{{ t.menu }}</div>
+      <ul class="nav__list list-reset">
+        <li class="nav__item"><a href="{{ home_url | relative_url }}" class="nav__link">{{ t.home }}</a></li>
+        <li class="nav__item"><a href="{{ home_url | relative_url }}#research" class="nav__link">{{ t.research }}</a></li>
+        <li class="nav__item"><a href="{{ locale_prefix | append: '/writing/' | relative_url }}" class="nav__link">{{ t.writing }}</a></li>
+        <li class="nav__item"><a href="{{ locale_prefix | append: '/about/' | relative_url }}" class="nav__link">{{ t.about }}</a></li>
+        <li class="nav__item"><a href="{{ locale_prefix | append: '/contact/' | relative_url }}" class="nav__link">{{ t.contact }}</a></li>
+        <li class="nav__item"><a href="https://navarrotech.org" target="_blank" rel="noopener noreferrer" class="nav__link business-nav">Navarro Technologies ↗</a></li>
+      </ul>
+    </div></nav>
+    {% include language-switch.html %}
+    <div class="nav-buttons"><button type="button" class="nav__icon nav__icon-menu" aria-label="{{ t.open_menu }}" aria-controls="main-navigation" aria-expanded="false"><i class="ion ion-md-menu" aria-hidden="true"></i></button><button type="button" class="nav__icon nav__icon-search" aria-label="{{ t.open_search }}"><i class="ion ion-md-search" aria-hidden="true"></i></button></div>
+  </div></div></div>
 </header>
-<!-- end header -->
-
 {% include search.html %}

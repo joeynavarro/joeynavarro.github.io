@@ -6,12 +6,12 @@
         <div class="hero__inner">
           <div class="hero__left">
             <div class="hero__image">
-              <img src="{{ site.hero.hero__image }}" alt="{{site.author.name}}'s Picture">
+              <img src="{{ site.hero.hero__image }}" alt="{{ t.profile_photo }}">
             </div>
           </div>
           <div class="hero__right">
-            <h1 class="hero__title">{{ site.hero.hero__title }}</h1>
-            <p class="hero__description">{{ site.hero.hero__description }}</p>
+            <h1 class="hero__title">{{ t.hero_title }}</h1>
+            <p class="hero__description">{{ t.hero_description }}</p>
             <div class="hero__contact">
               {% include social-links.html %}
             </div>

@@ -79,9 +79,9 @@ $(document).ready(function() {
   SimpleJekyllSearch({
     searchInput: document.getElementById("js-search-input"),
     resultsContainer: document.getElementById("js-results-container"),
-    json: "/search.json",
+    json: document.documentElement.lang === "es" ? "/es/search.json" : "/search.json",
     searchResultTemplate: '{article}',
-    noResultsText: '<h3 class="no-results">No results found</h3>'
+    noResultsText: document.documentElement.lang === 'es' ? '<h3 class="no-results">No se encontraron resultados</h3>' : '<h3 class="no-results">No results found</h3>'
   });
 
 

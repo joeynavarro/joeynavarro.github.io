@@ -1,0 +1,249 @@
+---
+layout: null
+lang: es
+permalink: /es/
+translation_en: /
+translation_es: /es/
+---
+{% include locale.html %}
+<!doctype html>
+<html lang="{{ lang }}" data-page-en="{{ english_url | relative_url }}" data-page-es="{{ spanish_url | relative_url }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joey Navarro | Trayectoria académica e investigación</title>
+  <meta name="description" content="Sitio personal académico y de investigación de Joey Navarro. Investigación en curso sobre adopción de IA en salud, artículos analíticos y proyectos de datos aplicados.">
+  <meta name="theme-color" content="#eeeaff">
+  <link rel="icon" type="image/png" href="{{ '/images/db-atom.png' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ english_url | absolute_url }}">
+  <link rel="alternate" hreflang="es" href="{{ spanish_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ english_url | absolute_url }}">
+  <meta property="og:title" content="Joey Navarro | Trayectoria académica e investigación">
+  <meta property="og:description" content="Trabajo académico personal sobre adopción de IA en salud, sistemas de información, análisis de datos aplicado y cambio organizacional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:locale" content="{% if lang == 'es' %}es_ES{% else %}en_US{% endif %}">
+  <meta property="og:image" content="https://joeynavarro.io/images/01.JPG">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="{{ '/portfolio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/language.css' | relative_url }}">
+  <script src="{{ '/language.js' | relative_url }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Inicio de Joey Navarro">
+        <img class="brand-logo" src="{{ '/images/db-atom.png' | relative_url }}" alt="" width="36" height="41">
+        <span>JOEY NAVARRO</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#research">Investigación</a>
+        <a href="#writing">Artículos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+        <a class="business-nav" href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies ↗</a>
+      </nav>
+      <a class="nav-cta" href="mailto:hello@joeynavarro.io">Contáctame <span aria-hidden="true">↗</span></a>
+      {% include language-switch.html %}
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-stage" aria-hidden="true">
+        <div class="stage-block stage-block-a"></div>
+        <div class="stage-block stage-block-b"></div>
+        <div class="stage-block stage-block-c"></div>
+        <div class="stage-glow stage-glow-a"></div>
+        <div class="stage-glow stage-glow-b"></div>
+      </div>
+
+      <div class="hero-grid shell">
+        <div class="hero-copy" data-reveal>
+          <p class="kicker"><span></span> SITIO PERSONAL ACADÉMICO Y DE INVESTIGACIÓN</p>
+          <h1>Estudio cómo la IA se integra <em>en el sector de la salud.</em></h1>
+          <p class="hero-lead">Soy Joey Navarro y estoy cursando estudios de doctorado en Tecnología de la Información. Mi investigación se centra en la intención de implementar inteligencia artificial en el sector de la salud, desde mi formación en bioquímica, liderazgo y tecnología farmacéutica.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#research">Explora mi investigación <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#writing">Lee mis artículos <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Intereses académicos">
+            <span>Adopción de IA en salud</span><span>Sistemas de información</span><span>Análisis de datos aplicado</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-scene-wrap data-reveal>
+          <canvas data-scene aria-label="Visualización 3D interactiva de sistemas de salud y datos conectados"></canvas>
+          <div class="scene-note"><span class="scene-dot"></span> Arrastra para explorar</div>
+          <div class="floating-label label-ai">IA</div>
+          <div class="floating-label label-rx">Rx</div>
+          <div class="floating-label label-data">01</div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span>Desplázate para explorar</span><i></i></div>
+    </section>
+
+    <section class="manifesto section" id="about">
+      <div class="shell manifesto-grid">
+        <div class="section-index" data-reveal>01 / SOBRE MÍ</div>
+        <div class="manifesto-copy" data-reveal>
+          <p class="display-copy">Mis intereses académicos conectan <strong>la salud, la tecnología de la información y las personas que deciden cómo se utilizan los nuevos sistemas.</strong></p>
+        </div>
+      </div>
+
+      <div class="shell profile-panel" data-tilt data-reveal>
+        <div class="profile-image-wrap">
+          <img src="{{ '/images/01.JPG' | relative_url }}" alt="Retrato de Joey Navarro" class="profile-image">
+          <span class="profile-badge">Joey Navarro · Doctorado en curso</span>
+        </div>
+        <div class="profile-content">
+          <p class="eyebrow">FORMACIÓN ACADÉMICA</p>
+          <h2>Una trayectoria en ciencia, liderazgo y salud.</h2>
+          <p>Obtuve un título universitario en Ciencias y Artes con especialidad en Bioquímica (BSA) en The University of Texas at Austin y una maestría en Liderazgo y Cambio en St. Edward’s University. Actualmente curso estudios de doctorado en Tecnología de la Información en Walden University. Mi experiencia en el sector de la salud orienta mis preguntas sobre tecnología, decisiones organizacionales e implementación.</p>
+          <div class="profile-stats">
+            <div><strong>IA</strong><span>Investigación sobre adopción</span></div>
+            <div><strong>CD</strong><span>Análisis aplicado</span></div>
+            <div><strong>Rx</strong><span>Operaciones farmacéuticas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section" id="research">
+      <div class="research-backdrop" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="shell research-grid">
+        <div class="research-title" data-reveal>
+          <p class="section-index">02 / INVESTIGACIÓN ACTUAL</p>
+          <h2>¿Qué influye en la intención de implementar IA en el sector de la salud?</h2>
+          <a class="button button-light" href="mailto:hello@joeynavarro.io?subject=Investigaci%C3%B3n%20sobre%20IA%20en%20salud">Hablemos de esta investigación <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="research-points" data-reveal>
+          <article><span>01</span><div><h3>Valor esperado</h3><p>Cómo se relaciona la percepción de la utilidad potencial de la IA con la intención de adoptarla en el sector de la salud.</p></div></article>
+          <article><span>02</span><div><h3>Esfuerzo de implementación</h3><p>Cómo influyen la facilidad de uso, la complejidad, la capacitación y el trabajo de implementación en la decisión de adoptar la tecnología.</p></div></article>
+          <article><span>03</span><div><h3>Contexto organizacional</h3><p>Cómo el liderazgo, la influencia social, los recursos disponibles y la infraestructura configuran el entorno para la adopción.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities section section-lavender">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-index">03 / INTERESES DE INVESTIGACIÓN</p><h2>Preguntas que cruzan los límites entre disciplinas.</h2></div>
+          <p>Mis intereses reúnen los métodos técnicos, los flujos de trabajo en salud y las condiciones organizacionales que influyen en la adopción de tecnología.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card card-orb" data-tilt data-reveal>
+            <div class="mini-orb" aria-hidden="true"><span></span><i></i></div>
+            <p class="card-number">01</p>
+            <h3>Inteligencia artificial</h3>
+            <p>Cómo evalúan las personas y las organizaciones la IA, cómo forman sus intenciones de adoptarla y cómo abordan su implementación en entornos de salud.</p>
+          </article>
+          <article class="capability-card card-rings" data-tilt data-reveal>
+            <div class="mini-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="card-number">02</p>
+            <h3>Datos y análisis</h3>
+            <p>Análisis aplicado, modelado predictivo, visualización de datos e interpretación de resultados en su contexto.</p>
+          </article>
+          <article class="capability-card card-capsule" data-tilt data-reveal>
+            <div class="mini-capsule" aria-hidden="true"><span></span></div>
+            <p class="card-number">03</p>
+            <h3>Tecnología en salud</h3>
+            <p>Sistemas de información en salud, flujos de trabajo farmacéuticos, preparación organizacional y relación entre la tecnología y la práctica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="writing section" id="writing">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-index">04 / ARTÍCULOS Y ANÁLISIS</p><h2>Preguntas, métodos y práctica analítica.</h2></div>
+          <p>Informes de mis proyectos analíticos, disponibles como parte de mi trayectoria académica y de aprendizaje.</p>
+        </div>
+        <div class="writing-grid">
+          <a class="writing-card" href="/es/analysis-of-sat-&amp;-act-for-2017-2018-test-years" data-reveal><span class="project-kicker">ANÁLISIS EXPLORATORIO · 2020</span><h3>Participación en el SAT y el ACT</h3><p>Estudio de los cambios en la participación y las puntuaciones de los exámenes de 2017 y 2018 mediante limpieza, análisis y visualización de datos.</p><span class="project-link">Lee el informe del proyecto ↗</span></a>
+          <a class="writing-card" href="/es/predicting-housing-prices-in-ames-iowa" data-reveal><span class="project-kicker">MODELOS DE REGRESIÓN · 2020</span><h3>Precios de viviendas en Ames, Iowa</h3><p>Un proyecto sobre selección de variables, datos faltantes y modelos de regresión para predecir precios de venta de viviendas.</p><span class="project-link">Lee el informe del proyecto ↗</span></a>
+        </div>
+        <p class="writing-more"><a class="text-link" href="/es/writing/">Archivo de artículos <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-index">05 / PROYECTOS DE APRENDIZAJE</p><h2>Proyectos técnicos que acompañan la investigación.</h2></div>
+          <p>Una selección de proyectos de código y experimentos de aprendizaje sobre aprendizaje automático, procesamiento del lenguaje, visión por computadora y análisis geoespacial.</p>
+        </div>
+
+        <div class="project-list">
+          <a class="project project-featured" href="https://github.com/joeynavarro/facial_expression_classification" target="_blank" rel="noreferrer" data-reveal>
+            <div class="project-copy">
+              <p class="project-kicker">VISIÓN POR COMPUTADORA / APRENDIZAJE PROFUNDO</p>
+              <h3>Clasificación de expresiones faciales</h3>
+              <p>Experimentos de aprendizaje profundo para extraer características visuales y clasificar expresiones a partir de imágenes.</p>
+              <span class="project-link">Ver repositorio ↗</span>
+            </div>
+            <div class="project-art art-face" aria-hidden="true">
+              <div class="face-disc"><span></span><i></i><b></b></div>
+              <div class="art-shadow"></div>
+            </div>
+          </a>
+
+          <div class="project-grid">
+            <a class="project project-small" href="https://github.com/joeynavarro/bianary_classification_nlp" target="_blank" rel="noreferrer" data-reveal>
+              <div class="project-copy"><p class="project-kicker">PROCESAMIENTO DEL LENGUAJE NATURAL</p><h3>Clasificación binaria con PLN</h3><p>Transformación del lenguaje no estructurado en señales predictivas y variables interpretables.</p><span class="project-link">Ver repositorio ↗</span></div>
+              <div class="project-art art-nlp" aria-hidden="true"><span>A</span><span>01</span><span>?</span></div>
+            </a>
+            <a class="project project-small project-violet" href="https://github.com/joeynavarro/maping_natural_disasters_from_tweet_coordinates" target="_blank" rel="noreferrer" data-reveal>
+              <div class="project-copy"><p class="project-kicker">ANÁLISIS GEOESPACIAL</p><h3>Mapeo de señales de desastres</h3><p>Localización de señales relacionadas con desastres a partir de datos sociales y coordenadas geográficas.</p><span class="project-link">Ver repositorio ↗</span></div>
+              <div class="project-art art-map" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey section">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <div><p class="section-index">06 / TRAYECTORIA ACADÉMICA</p><h2>Ciencia, liderazgo y tecnología de la información.</h2></div>
+          <p>Mi formación y mi experiencia en salud aportan distintas perspectivas a una misma pregunta: ¿cómo puede ser útil la tecnología en la práctica?</p>
+        </div>
+        <div class="journey-track">
+          <article data-reveal><span class="year">Ciencia</span><h3>Bioquímica</h3><p>The University of Texas at Austin · Ciencias y Artes (BSA). Razonamiento científico, fundamentos de laboratorio y resolución de problemas a nivel molecular.</p></article>
+          <article data-reveal><span class="year">Análisis</span><h3>IA y ciencia de datos</h3><p>Desarrollo de modelos, procesos de análisis, experimentación y comunicación técnica.</p></article>
+          <article data-reveal><span class="year">Salud</span><h3>Tecnología farmacéutica</h3><p>Flujos de trabajo de medicamentos, producción, calidad, cumplimiento normativo, inventario y operaciones centradas en el paciente.</p></article>
+          <article data-reveal><span class="year">En curso</span><h3>Estudios de doctorado en Tecnología de la Información</h3><p>Walden University · En curso. Trabajo académico centrado en la adopción de IA en salud y su implementación en las organizaciones.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="shell contact-panel" data-reveal>
+        <div class="contact-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+        <p class="section-index">07 / CORRESPONDENCIA ACADÉMICA</p>
+        <h2>Hablemos de investigación, ideas y evidencia.</h2>
+        <p>Contáctame para correspondencia académica, para conversar sobre la adopción de IA en salud o para hacer preguntas sobre mis artículos analíticos.</p>
+        <div class="contact-actions">
+          <a class="button button-dark" href="mailto:hello@joeynavarro.io">hello@joeynavarro.io <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="/es/about/">Formación académica</a>
+        </div>
+        <p class="business-note">Para servicios de TI en sitio, visita el sitio web independiente de mi empresa: <a href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies ↗</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div class="footer-brand"><img class="brand-logo" src="{{ '/images/db-atom.png' | relative_url }}" alt="" width="36" height="41"><strong>Joey Navarro</strong></div>
+    <p>Sitio personal académico y de investigación</p>
+    <div class="footer-links"><a href="https://github.com/joeynavarro">GitHub</a><a href="https://www.kaggle.com/joeynavarro">Kaggle</a><a href="https://medium.com/@joeynavarro.data">Medium</a><a href="https://navarrotech.org" target="_blank" rel="noopener noreferrer">Navarro Technologies ↗</a></div>
+    <span>© <span data-year></span></span>
+  </footer>
+
+  <script type="module" src="{{ '/portfolio.js' | relative_url }}"></script>
+</body>
+</html>

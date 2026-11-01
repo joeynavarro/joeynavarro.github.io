@@ -1,5 +1,8 @@
 ---
 layout: page
+lang: en
+translation_en: /about/
+translation_es: /es/about/
 title: About
 permalink: /about/
 description: "Joey Navarro’s academic background and ongoing research interests in healthcare AI adoption and information technology."
@@ -8,7 +11,7 @@ image: '/images/01.JPG'
 
 I’m Joey Navarro. This is my personal academic and research website: a place for my ongoing research interests, analytical writing, and learning projects.
 
-I hold a bachelor’s degree in Biochemistry and a master’s degree in Leadership and Change. I am pursuing doctoral study in Information Technology, with a research focus on the intention to implement artificial intelligence in healthcare.
+I hold a Bachelor of Science and Arts in Biochemistry from The University of Texas at Austin and a master’s degree in Leadership and Change from St. Edward’s University. I am pursuing doctoral study in Information Technology at Walden University, with a research focus on the intention to implement artificial intelligence in healthcare.
 
 ## Research interests
 

@@ -4,6 +4,7 @@
 </div>
 
 <script>
+  var disqus_config = function () { this.language = '{{ lang }}'; };
   function load_disqus() {
     var disqus_shortname = '{{ site.disqus-identifier }}',
       is_disqus_empty = document.getElementById('disqus_empty'),
@@ -30,7 +31,7 @@
   }, false);
 
 </script>
-<noscript>Please enable JavaScript to view the
-  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<noscript>{{ t.enable_comments }}
+  <a href="https://disqus.com/?ref_noscript">{{ t.disqus_comments }}</a>
 </noscript>
 <!-- end comments -->

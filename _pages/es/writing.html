@@ -1,0 +1,22 @@
+---
+layout: page
+lang: es
+title: Artículos
+permalink: /es/writing/
+translation_en: /writing/
+translation_es: /es/writing/
+description: "Artículos e informes de proyectos analíticos de la trayectoria académica y de aprendizaje de Joey Navarro."
+---
+{% include locale.html %}
+<p>Artículos e informes de proyectos analíticos de mi práctica de aprendizaje e investigación. Estos informes anteriores siguen disponibles junto a mis <a href="/es/#research">intereses actuales de investigación sobre la adopción de IA en salud</a>.</p>
+{% for post in site.posts %}
+{% assign translated = site.pages | where: 'translation_en', post.url | where: 'lang', 'es' | first %}
+{% if translated %}
+<section style="padding: 24px 0; border-bottom: 1px solid var(--border-color);">
+  <p><small>{% include localized-date.html date=translated.date %} · Informe de proyecto analítico</small></p>
+  <h2><a href="{{ translated.url | relative_url | escape }}">{{ translated.title | escape }}</a></h2>
+  <p>{{ translated.description | escape }}</p>
+  <p><a href="{{ translated.url | relative_url | escape }}">Leer el informe →</a></p>
+</section>
+{% endif %}
+{% endfor %}

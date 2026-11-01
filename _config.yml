@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Joey Navarro
-logo: '/images/logo.png' # You can add own logo. For example '/images/logo.png'.
+logo: '/images/db-atom.png' # You can add own logo. For example '/images/logo.png'.
 description: "Joey Navarro’s personal academic and research website, exploring artificial intelligence adoption, healthcare information systems, and applied data analysis."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joeynavarro.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -17,9 +17,9 @@ social:
 - {icon: "ion-logo-twitter", label: Twitter, link: "https://twitter.com/NavarroJoey"}
 - {icon: "ion-logo-facebook", label: Facebook, link: "https://www.facebook.com/joeynavarro.io"}
 - {icon: "ion-logo-instagram", label: Instagram, link: "https://www.instagram.com/iamjoeynavarro/"}
-- {icon: "ion-logo-github", label: Github, link: "https://github.com/joeynavarro"}
-- {icon: "ion-logo-desktop", label: Desktop, link: "https://www.kaggle.com/joeynavarro"}
-- {icon: "ion-logo-book", label: Book, link: "https://medium.com/@joeynavarro.data"}
+- {icon: "ion-logo-github", label: GitHub, link: "https://github.com/joeynavarro"}
+- {icon: "ion-logo-desktop", label: Kaggle, link: "https://www.kaggle.com/joeynavarro"}
+- {icon: "ion-logo-book", label: Medium, link: "https://medium.com/@joeynavarro.data"}
 
 # Example of adding a new link to the author section and footer - {icon: "ion-logo-github", label: Github, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/v4/
